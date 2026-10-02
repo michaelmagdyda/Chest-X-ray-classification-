@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Dataset images (NIH ChestX-ray14 - download separately)
+images/
+images_*/
+
+# Model weights - too large for GitHub (see models/README.md)
+checkpoint/
+checkpoints/
+pre-trained*/
+*.pth
+*.pth.tar
+*.pt
+*.ckpt
+
+# Archives
+*.zip
+*.rar
+*.tar.gz
+
+# IDE / OS / tools
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+*.log
+
+# Credentials and generated local artifacts
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+models/pretrained/
+.pytest_cache/

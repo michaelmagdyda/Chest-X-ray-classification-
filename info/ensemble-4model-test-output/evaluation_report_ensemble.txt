@@ -1,0 +1,48 @@
+=================================================================
+NIH Chest X-ray Classification — 4-MODEL ENSEMBLE REPORT
+Models: ConvNeXt-Large (35%) + CheXNet (30%) + DenseNet-121 (17.5%) + Swin-T (17.5%)
+Test-Time Augmentation (TTA): ENABLED (Original + H-Flip)
+Test Set Size: 25596 images
+=================================================================
+
+Pathology / Disease       | Ensemble AUC Score
+---------------------------------------------
+Atelectasis               | 0.7991
+Cardiomegaly              | 0.8995
+Effusion                  | 0.8454
+Infiltration              | 0.7127
+Mass                      | 0.8525
+Nodule                    | 0.8149
+Pneumonia                 | 0.7446
+Pneumothorax              | 0.8870
+Consolidation             | 0.7668
+Edema                     | 0.8644
+Emphysema                 | 0.9362
+Fibrosis                  | 0.8538
+Pleural_Thickening        | 0.8091
+Hernia                    | 0.9346
+---------------------------------------------
+Ensemble Mean AUC-ROC     | 0.8372
+
+Classification Metrics (Threshold = 0.5):
+                    precision    recall  f1-score   support
+
+       Atelectasis       0.37      0.47      0.42      3279
+      Cardiomegaly       0.41      0.42      0.42      1069
+          Effusion       0.45      0.71      0.55      4658
+      Infiltration       0.42      0.57      0.48      6112
+              Mass       0.39      0.50      0.44      1748
+            Nodule       0.32      0.32      0.32      1623
+         Pneumonia       0.09      0.08      0.09       555
+      Pneumothorax       0.46      0.58      0.52      2665
+     Consolidation       0.21      0.32      0.25      1815
+             Edema       0.19      0.50      0.28       925
+         Emphysema       0.41      0.66      0.50      1093
+          Fibrosis       0.20      0.21      0.20       435
+Pleural_Thickening       0.21      0.37      0.27      1143
+            Hernia       0.55      0.47      0.50        86
+
+         micro avg       0.37      0.52      0.43     27206
+         macro avg       0.33      0.44      0.37     27206
+      weighted avg       0.37      0.52      0.43     27206
+       samples avg       0.28      0.33      0.28     27206

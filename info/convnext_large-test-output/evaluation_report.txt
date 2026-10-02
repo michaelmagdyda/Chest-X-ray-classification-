@@ -1,0 +1,48 @@
+============================================================
+NIH Chest X-ray Classification Evaluation Report
+Model: convnext_large
+Checkpoint: checkpoints/convnext_l_run/best_model_auc.pth
+Test Set Size: 25596 images
+============================================================
+
+Pathology / Disease       | AUC-ROC Score  
+---------------------------------------------
+Atelectasis               | 0.7880
+Cardiomegaly              | 0.8831
+Effusion                  | 0.8353
+Infiltration              | 0.6984
+Mass                      | 0.8414
+Nodule                    | 0.8015
+Pneumonia                 | 0.7103
+Pneumothorax              | 0.8649
+Consolidation             | 0.7528
+Edema                     | 0.8534
+Emphysema                 | 0.9223
+Fibrosis                  | 0.8249
+Pleural_Thickening        | 0.7893
+Hernia                    | 0.9284
+---------------------------------------------
+Mean AUC-ROC              | 0.8210
+
+Classification Metrics (Threshold = 0.5):
+                    precision    recall  f1-score   support
+
+       Atelectasis       0.34      0.55      0.42      3279
+      Cardiomegaly       0.36      0.46      0.40      1069
+          Effusion       0.44      0.71      0.54      4658
+      Infiltration       0.40      0.55      0.46      6112
+              Mass       0.35      0.51      0.42      1748
+            Nodule       0.30      0.32      0.31      1623
+         Pneumonia       0.08      0.13      0.10       555
+      Pneumothorax       0.42      0.59      0.49      2665
+     Consolidation       0.18      0.39      0.25      1815
+             Edema       0.18      0.51      0.26       925
+         Emphysema       0.40      0.66      0.50      1093
+          Fibrosis       0.15      0.22      0.18       435
+Pleural_Thickening       0.19      0.37      0.25      1143
+            Hernia       0.48      0.56      0.52        86
+
+         micro avg       0.34      0.53      0.41     27206
+         macro avg       0.30      0.47      0.36     27206
+      weighted avg       0.35      0.53      0.42     27206
+       samples avg       0.27      0.34      0.28     27206
